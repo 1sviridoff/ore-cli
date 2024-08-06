@@ -84,7 +84,7 @@ pub struct MineArgs {
         help = "Minimal hash difficulty",
         default_value = "18"
     )]
-    pub difficulty: u32,
+    pub minimum_difficulty: u32,
 }
 
 #[derive(Parser, Debug)]

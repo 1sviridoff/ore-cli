@@ -11,6 +11,16 @@ pub struct BalanceArgs {
 }
 
 #[derive(Parser, Debug)]
+pub struct DifficultyArgs {
+    #[arg(
+        long,
+        value_name = "MIN_DIFFICULTY",
+        help = "Specify minimal hash difficulty"
+    )]
+    pub difficulty: u32,
+}
+
+#[derive(Parser, Debug)]
 pub struct BenchmarkArgs {
     #[arg(
         long,

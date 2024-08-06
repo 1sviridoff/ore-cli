@@ -20,11 +20,11 @@ use solana_transaction_status::{TransactionConfirmationStatus, UiTransactionEnco
 
 use crate::Miner;
 
-const MIN_SOL_BALANCE: f64 = 0.005;
+const MIN_SOL_BALANCE: f64 = 0.0025;
 
 const RPC_RETRIES: usize = 0;
 const _SIMULATION_RETRIES: usize = 4;
-const GATEWAY_RETRIES: usize = 150;
+const GATEWAY_RETRIES: usize = 999;
 const CONFIRM_RETRIES: usize = 1;
 
 const CONFIRM_DELAY: u64 = 0;
